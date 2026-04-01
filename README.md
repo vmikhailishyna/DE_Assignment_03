@@ -26,3 +26,16 @@ What is the day's revenue of the club?
 What is the workload of the hall and the popularity of classes?
 General business analytics?
 What is the activity and life cycle of the client?
+
+
+## Data Insights
+
+Analysis of fitness club income
+<img width="957" height="382" alt="image" src="https://github.com/user-attachments/assets/8c4dee79-ec1d-4815-a5a9-82f040c64661" />
+
+
+At what hours of the day do the most people come?
+
+<img width="752" height="382" alt="image" src="https://github.com/user-attachments/assets/93a36b2f-cbad-4ca7-871d-c7cfc256a049" />
+
+
