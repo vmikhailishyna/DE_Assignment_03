@@ -1,6 +1,7 @@
 {{ config(
     materialized='incremental',
-    unique_key='booking_id'
+    unique_key='booking_id',
+    incremental_strategy='delete+insert'
 ) }}
 
 select * from {{ ref('stg_bookings') }}
