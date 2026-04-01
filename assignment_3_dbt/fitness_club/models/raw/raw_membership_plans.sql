@@ -1,0 +1,1 @@
+select * from {{ ref('membership_plans') }}

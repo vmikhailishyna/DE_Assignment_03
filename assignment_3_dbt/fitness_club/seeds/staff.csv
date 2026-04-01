@@ -1,0 +1,16 @@
+staff_id,first_name,last_name,role,hire_date,termination_date,salary_rate
+1,Valeriy,Ivanov,Admin,2024-01-15,,25000
+2,Oksana,Zaitseva,Admin,2024-02-01,,25000
+3,Mykola,Tyshchenko,Security,2024-01-10,2025-12-20,18000
+4,Petro,Shchur,Security,2024-01-10,,18000
+5,Vasyl,Krit,Security,2024-03-15,,18000
+6,Halyna,Vovk,Cleaner,2024-01-12,2025-06-10,14000
+7,Nadiia,Holovach,Cleaner,2024-01-12,,14000
+8,Olena,Bila,Cleaner,2024-05-20,,14000
+9,Diana,Svitla,Admin,2024-06-10,,25000
+10,Oleksiy,Chornyi,Security,2024-06-15,2026-01-15,18000
+11,Maryna,Kolos,Cleaner,2024-08-01,,14000
+12,Bohdan,Sokil,Security,2024-09-01,,18000
+13,Kateryna,Rybka,Admin,2024-10-01,,25000
+14,Pavlo,Vedmid,Security,2024-11-15,,18000
+15,Liudmyla,Zoria,Cleaner,2025-01-20,,14000

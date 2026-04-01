@@ -1,0 +1,114 @@
+version: 2
+
+models:
+  - name: stg_attendance
+    description: Data on customer visits to the hall (checkins and checkouts).
+    columns:
+      - name: attendance_id
+        tests:
+          - unique
+          - not_null
+      - name: member_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_members')
+              field: member_id
+      - name: duration_minutes
+        description: The length of stay in the hall is in minutes.
+
+  - name: stg_bookings
+    description: Customer records for training to specific trainers.
+    columns:
+      - name: booking_id
+        tests:
+          - unique
+          - not_null
+      - name: member_id
+        tests:
+          - relationships:
+              to: ref('stg_members')
+              field: member_id
+      - name: trainer_id
+        tests:
+          - relationships:
+              to: ref('stg_trainers')
+              field: trainer_id
+
+  - name: stg_classes
+    description: Information about group classes and their capacity.
+    columns:
+      - name: class_id
+        tests:
+          - unique
+          - not_null
+      - name: trainer_id
+        tests:
+          - relationships:
+              to: ref('stg_trainers')
+              field: trainer_id
+
+  - name: stg_members
+    description: Basic information about fitness club customers.
+    columns:
+      - name: member_id
+        tests:
+          - unique
+          - not_null
+      - name: member_name
+        description: Complete customer name (cleaned).
+
+  - name: stg_membership_plans
+    description: Available tariff plans and their characteristics (price, duration, privileges).
+    columns:
+      - name: plan_id
+        tests:
+          - unique
+          - not_null
+      - name: price
+        tests:
+          - not_null
+
+  - name: stg_payments
+    description: Transactions for purchased season tickets.
+    columns:
+      - name: payment_id
+        tests:
+          - unique
+          - not_null
+      - name: plan_id
+        tests:
+          - relationships:
+              to: ref('stg_membership_plans')
+              field: plan_id
+
+  - name: stg_staff
+    description: Data on the club's administrative staff and their salaries.
+    columns:
+      - name: staff_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_subscriptions
+    description: Active and past customer subscriptions to plans.
+    columns:
+      - name: subscription_id
+        tests:
+          - unique
+          - not_null
+      - name: member_id
+        tests:
+          - relationships:
+              to: ref('stg_members')
+              field: member_id
+
+  - name: stg_trainers
+    description: Information about the coaching staff, their specialization and contacts.
+    columns:
+      - name: trainer_id
+        tests:
+          - unique
+          - not_null
+      - name: specialization
+        description: Coach's direction (eg yoga, crossfit)

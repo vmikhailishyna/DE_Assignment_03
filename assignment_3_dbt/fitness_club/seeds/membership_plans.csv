@@ -1,0 +1,7 @@
+plan_id,plan_name,price,duration_weeks,has_group_training,has_safe,has_co_access,has_guest_pass,has_unlimited_body_composition
+1,GymPass,675,4,0,1,0,0,0
+2,SuperPass,1649,4,1,1,0,0,0
+3,MultiPass,2199,4,1,1,1,1,1
+4,SmartPass,499,4,0,1,0,0,0
+5,TeenPass,569,4,1,1,0,0,0
+6,DailyPass,539,4,1,1,0,0,0

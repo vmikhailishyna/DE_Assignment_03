@@ -1,0 +1,16 @@
+class_id,class_name,trainer_id,start_time,max_capacity
+201,Morning Yoga,102,08:00,15
+202,Early Crossfit,101,07:30,12
+203,Powerlifting Basics,106,09:00,8
+204,Boxing Intro,105,10:00,10
+205,Pilates Flow,104,11:00,15
+206,Bodybuilding Split,103,12:00,10
+207,Zumba Party,109,18:00,25
+208,HIIT Blast,108,17:30,15
+209,Evening Yoga,107,19:00,15
+210,TRX Core,113,16:00,12
+211,MMA Sparring,118,20:00,8
+212,Rehab Mobility,119,14:00,6
+213,Aqua Aerobics,115,10:00,12
+214,Advanced Crossfit,120,18:30,12
+215,Deep Stretching,117,20:30,20
